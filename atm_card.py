@@ -11,5 +11,4 @@ class ATMCard():
         print("Default Balance:", self.defaultBalance)
 
 account1 = ATMCard(123, 5000)
-account1.info()
 
