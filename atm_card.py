@@ -6,9 +6,8 @@ class ATMCard():
         self.defaultPin = defaultPin
         self.defaultBalance = defaultBalance
 
-    def info(self):
-        print("Default PIN:", self.defaultPin)
-        print("Default Balance:", self.defaultBalance)
-
-account1 = ATMCard(123, 5000)
-
+    def get_defaultPin(self):
+        return self.defaultPin
+    
+    def get_defaultBalance(self):
+        return self.defaultBalance
