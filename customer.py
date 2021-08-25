@@ -1,4 +1,4 @@
-import atm_card
+from atm_card import ATMCard
 
 class Customer():
     def __init__(self, id, custPin=1234, custBalance=10000):
@@ -6,12 +6,15 @@ class Customer():
         self.custPin = custPin
         self.custBalance = custBalance
 
+    @property
     def get_id(self):
         return self.id
     
+    @property
     def get_custPin(self):
         return self.custPin
-
+    
+    @property
     def get_custBalance(self):
         return self.custBalance
 

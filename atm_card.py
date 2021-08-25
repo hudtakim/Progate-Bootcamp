@@ -1,6 +1,3 @@
-from typing import DefaultDict
-
-
 class ATMCard():
     def __init__(self, defaultPin, defaultBalance):
         self.defaultPin = defaultPin
