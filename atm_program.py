@@ -3,12 +3,16 @@ import random
 import datetime
 
 ATM = Customer(id)
-count = 0
-while(count < 3):
+while(True):
     userInput = int(input("Masukkan PIN anda:"))
+    trial = 0
+    while(trial < 2 and userInput != ATM.get_custPin):
+        userInput = int(input("PIN salah, masukkan lagi:"))
+        trial +=1
+    
     if userInput == ATM.get_custPin:
-        print("Berhasil login")
+        print("Berhasil masuk")
         break
-    count +=1
-    if count == 3:
-        print("Gagal login, silahkan restart program")
+    else:
+        print("Anda melakukan kesalahan 3 kali, PIN anda terblokir")
+        break
