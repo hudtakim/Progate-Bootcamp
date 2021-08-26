@@ -23,3 +23,6 @@ class Customer():
 
     def depositBalance(self, nominal):
         self.custBalance += nominal
+
+    def updatePIN(self, newPIN):
+        self.custPin = newPIN

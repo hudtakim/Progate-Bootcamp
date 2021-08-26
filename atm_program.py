@@ -59,6 +59,7 @@ while(True):
             while verify != newPin:
                 verify = int(input("PIN tidak cocok, ulangi PIN baru:"))
             
+            ATM.updatePIN(newPin)
             print("PIN berhasil diganti")
 
         elif userInput == 5:
